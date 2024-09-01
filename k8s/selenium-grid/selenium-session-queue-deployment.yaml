@@ -1,0 +1,36 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: selenium-session-queue
+  namespace: selenium-grid
+  labels:
+    app: selenium-session-queue
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: selenium-session-queue
+  template:
+    metadata:
+      labels:
+        app: selenium-session-queue
+    spec:
+      containers:
+      - env:
+        - name: SE_EVENT_BUS_HOST
+          value: selenium-event-bus
+        - name: SE_EVENT_BUS_PUBLISH_PORT
+          value: "4442"
+        - name: SE_EVENT_BUS_SUBSCRIBE_PORT
+          value: "4443"
+        image: selenium/session-queue:4.5.0
+        imagePullPolicy: ""
+        name: selenium-session-queue
+        ports:
+        - containerPort: 5559
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}

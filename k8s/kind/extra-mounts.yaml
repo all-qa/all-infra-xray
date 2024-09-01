@@ -1,0 +1,19 @@
+apiVersion: kind.x-k8s.io/v1alpha4
+kind: Cluster
+nodes:
+  - role: control-plane
+    kubeadmConfigPatches:
+      - |
+        kind: InitConfiguration
+        nodeRegistration:
+          kubeletExtraArgs:
+            node-labels: "ingress-ready=true"
+    extraMounts:
+      - hostPath: ./k8s/kind/static/jenkins_data
+        containerPath: /jenkins/jenkins_data
+      - hostPath: ./k8s/kind/static/jira_data
+        containerPath: /jira/jira_data
+      - hostPath: ./k8s/kind/static/postgresqldata
+        containerPath: /jira/postgresqldata
+      - hostPath: /var/run/docker.sock
+        containerPath: /var/run/docker.sock

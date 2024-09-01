@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Plugin-Dependencies: structs:1.14,credentials:2.1.11,plain-credentials
+ :1.4,workflow-multibranch:2.16,job-dsl:1.51;resolution:=optional,job-
+ dsl-core:1.51;resolution:=optional,workflow-cps:2.25;resolution:=opti
+ onal,workflow-step-api:2.4;resolution:=optional
+Long-Name: Allure TestOps for Jenkins
+Plugin-Developers: Dmitry Baev:baev:baev@qameta.io,Artem Eroshenko:ero
+ shenkoam:eroshenkoam@qameta.io
+Group-Id: io.qameta.allure
+Plugin-Version: 3.29.0
+Jenkins-Version: 1.642.4
+Extension-Name: allure-jenkins
+Plugin-Class: io.qameta.allure.jenkins.AllurePlugin
+Url: https://qameta.io/allure
+Short-Name: allure-jenkins
+

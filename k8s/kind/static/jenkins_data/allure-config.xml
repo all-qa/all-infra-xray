@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.qameta.allure.jenkins.config.AllurePluginConfig plugin="allure-jenkins@3.29.0">
+  <serverConfigs>
+    <io.qameta.allure.jenkins.config.AllureServerConfig>
+      <id>allure-testops</id>
+      <endpoint>http://allure-testops-gateway.allure-testops.svc.cluster.local:8080/</endpoint>
+      <credentialsId>allure-testops</credentialsId>
+      <enableSslValidation>true</enableSslValidation>
+      <enabled>true</enabled>
+      <threadsCount>2</threadsCount>
+      <batchSize>25</batchSize>
+      <maxDepth>1</maxDepth>
+      <processInterval>2</processInterval>
+      <indexInterval>1</indexInterval>
+      <delayInterval>2</delayInterval>
+      <delayBeforeUploadFinish>20</delayBeforeUploadFinish>
+    </io.qameta.allure.jenkins.config.AllureServerConfig>
+  </serverConfigs>
+</io.qameta.allure.jenkins.config.AllurePluginConfig>

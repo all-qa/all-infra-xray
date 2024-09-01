@@ -1,0 +1,50 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: chrome
+  namespace: selenium-grid
+  labels:
+    app: chrome
+spec:
+  selector:
+    matchLabels:
+      app: chrome
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: chrome
+    spec:
+      containers:
+      - env:
+        - name: SE_EVENT_BUS_HOST
+          value: selenium-event-bus
+        - name: SE_EVENT_BUS_PUBLISH_PORT
+          value: "4442"
+        - name: SE_EVENT_BUS_SUBSCRIBE_PORT
+          value: "4443"
+        - name: SE_VNC_NO_PASSWORD
+          value: "1"
+        - name: SE_NODE_MAX_SESSIONS
+          value: "4"
+        - name: SE_NODE_OVERRIDE_MAX_SESSIONS
+          value: "true"
+        - name: SE_NODE_SESSION_TIMEOUT
+          value: "30"
+        image: selenium/node-chrome:4.5.0
+        imagePullPolicy: ""
+        name: chrome
+        resources: {}
+        volumeMounts:
+          - name: dshm
+            mountPath: /dev/shm
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+        - name: dshm
+          emptyDir: { "medium": "Memory" }
+status: {}
+
+
+

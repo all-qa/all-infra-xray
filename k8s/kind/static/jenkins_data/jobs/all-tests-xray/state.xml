@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.branch.MultiBranchProject_-State plugin="branch-api@2.1046.v0ca_37783ecc5">
+  <sourceActions>
+    <entry>
+      <string>44cae403-d1c3-4abd-a748-099e7be73103</string>
+      <list>
+        <org.jenkinsci.plugins.github__branch__source.GitHubRepoMetadataAction plugin="github-branch-source@1695.v88de84e9f6b_9"/>
+        <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@696.v778d637b_a_762"/>
+        <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@1695.v88de84e9f6b_9">
+          <iconClassName>icon-github-repo</iconClassName>
+          <url>https://github.com/all-qa/all-tests-xray</url>
+        </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+        <org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch plugin="github-branch-source@1695.v88de84e9f6b_9">
+          <repoOwner>all-qa</repoOwner>
+          <repository>all-tests-xray</repository>
+          <defaultBranch>master</defaultBranch>
+        </org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch>
+      </list>
+    </entry>
+  </sourceActions>
+</jenkins.branch.MultiBranchProject_-State>

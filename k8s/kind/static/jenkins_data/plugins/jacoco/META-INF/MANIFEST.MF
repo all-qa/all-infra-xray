@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: dstadler
+Build-Jdk: 1.8.0_312
+Extension-Name: jacoco
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: jacoco
+Implementation-Version: 3.3.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: jacoco
+Long-Name: Jenkins JaCoCo plugin
+Url: https://github.com/jenkinsci/jacoco-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 3.3.2
+Hudson-Version: 2.277.1
+Jenkins-Version: 2.277.1
+Mask-Classes: org.objectweb.asm.
+Plugin-Dependencies: dashboard-view:2.17;resolution:=optional
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Stephen Connolly:stephen
+ connolly:,Manuel Carrasco Monino:manolo:manolo@apache.org,Jonathan Fu
+ erth:jfuerth:,David Carver:kingargyle:,Ognjen Bubalo:ognjenb:,Dominik
+  Stadler:centic:,Christopher Simons:csimons:,Martin Heinzerling:mhein
+ zerling:webmaster@mheinzerling.de
+Plugin-License-Name: MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/jacoco-plugin
+

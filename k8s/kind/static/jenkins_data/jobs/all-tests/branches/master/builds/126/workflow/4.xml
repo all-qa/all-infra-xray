@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@920.v59f71ce16f04">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2759.v87459c4eea_ca_">
+    <parentIds>
+      <string>3</string>
+    </parentIds>
+    <id>4</id>
+    <descriptorId>org.csanchez.jenkins.plugins.kubernetes.pipeline.PodTemplateStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2759.v87459c4eea_ca_">
+      <arguments>
+        <entry>
+          <string>inheritFrom</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>label</string>
+          <string>default</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1336.vee415d95c521">
+      <startTime>1725213011789</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

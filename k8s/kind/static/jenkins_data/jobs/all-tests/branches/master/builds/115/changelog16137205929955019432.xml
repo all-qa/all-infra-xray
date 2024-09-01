@@ -1,0 +1,10 @@
+commit 6bb8df7c140a6f1c49c0014eb3d9105cc34fac8d
+tree b776c4d10a3f9df7bf5bcf9e0db942a095508cd7
+parent bac0afed5846c5ac06b595cefb5cfbf6f19b2b26
+author svitskyi <oleg.svitskyi@protonmail.ch> 2022-10-15 20:07:31 +0200
+committer svitskyi <oleg.svitskyi@protonmail.ch> 2022-10-15 20:07:31 +0200
+
+    adding allure testops support
+
+
+:100755 100755 8bfe60a2883879b4a686220ac1245427af2df712 1a3299d47ce65fb1bf26c110805e316422cad9f1 M	src/test/java/com/test/GoogleSearchEngineE2eTest.java

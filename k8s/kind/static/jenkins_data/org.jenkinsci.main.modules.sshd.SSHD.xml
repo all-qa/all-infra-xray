@@ -1,0 +1,4 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.main.modules.sshd.SSHD plugin="sshd@3.249.v2dc2ea_416e33">
+  <port>-1</port>
+</org.jenkinsci.main.modules.sshd.SSHD>

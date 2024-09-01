@@ -1,0 +1,12 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.xpandit.plugins.xrayjenkins.model.ServerConfiguration plugin="xray-connector@2.5.1">
+  <serverInstances>
+    <com.xpandit.plugins.xrayjenkins.model.XrayInstance>
+      <configID>58558d75-ad17-402f-b32c-5311678379ad</configID>
+      <alias>xray</alias>
+      <serverAddress>http://172.18.0.3:8080</serverAddress>
+      <hosting>SERVER</hosting>
+      <credentialId>c02c7da6-86fa-484a-9a28-a502761ed403</credentialId>
+    </com.xpandit.plugins.xrayjenkins.model.XrayInstance>
+  </serverInstances>
+</com.xpandit.plugins.xrayjenkins.model.ServerConfiguration>

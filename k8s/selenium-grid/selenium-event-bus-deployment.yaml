@@ -1,0 +1,31 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: selenium-event-bus
+  namespace: selenium-grid
+  labels:
+    app: selenium-event-bus
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: selenium-event-bus
+  template:
+    metadata:
+      labels:
+        app: selenium-event-bus
+    spec:
+      containers:
+      - image: selenium/event-bus:4.5.0
+        imagePullPolicy: ""
+        name: selenium-event-bus
+        ports:
+        - containerPort: 4442
+        - containerPort: 4443
+        - containerPort: 5557
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}

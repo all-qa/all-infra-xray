@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hugobraz
+Build-Jdk: 1.8.0_292
+Extension-Name: xray-connector
+Specification-Title: Integrates Jenkins with Xray
+Implementation-Title: xray-connector
+Implementation-Version: 2.6.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: xray-connector
+Long-Name: Xray - Test Management for Jira Plugin
+Url: https://github.com/jenkinsci/xray-connector-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 2.6.1
+Hudson-Version: 2.138.4
+Jenkins-Version: 2.138.4
+Plugin-Dependencies: maven-plugin:3.2,credentials:2.1.10,jquery:1.12.4
+ -0,junit:1.20,mailer:1.11,matrix-project:1.13,plain-credentials:1.4
+Plugin-Developers: Xray - Test Management for Jira:Support:support@get
+ xray.app
+

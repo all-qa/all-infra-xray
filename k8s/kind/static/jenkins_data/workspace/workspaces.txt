@@ -1,0 +1,2 @@
+all-tests-xray/master
+all-tests-xray_master
